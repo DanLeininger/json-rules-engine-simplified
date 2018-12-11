@@ -30,7 +30,7 @@ class Engine {
     this.validate(rule);
     this.rules.push(rule);
   };
-  run = formData => Promise.resolve(applicableActions(this.rules, formData));
+  run = formData => applicableActions(this.rules, formData);
 }
 
 export default Engine;
