@@ -30,7 +30,7 @@ class Engine {
     this.validate(rule);
     this.rules.push(rule);
   };
-  console.log('heyo');
+
   run = formData => applicableActions(this.rules, formData);
 }
 
